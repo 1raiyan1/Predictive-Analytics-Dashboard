@@ -53,7 +53,7 @@ if uploaded_file and api_key:
             data = {"api_key": api_key}
             
             response = requests.post(
-                "http://localhost:8000/analyze",
+                "https://predictive-analytics-dashboard-7vor.onrender.com/analyze",
                 files=files,
                 data=data
             )
